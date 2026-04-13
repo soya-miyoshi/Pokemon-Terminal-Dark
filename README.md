@@ -4,34 +4,12 @@
 
 [![Build Status](https://travis-ci.org/LazoCoder/Pokemon-Terminal.svg?branch=master)](https://travis-ci.org/LazoCoder/Pokemon-Terminal)
 
-<p align="center">
-    <img src="https://i.imgur.com/n34fXyp.png" width="700"/> <!--Pikachu-->
-    <img src="https://i.imgur.com/bLajJfw.png" width="430"/> <!--Bulbasaur-->
-    <img src="https://i.imgur.com/ZzQhJuE.png" width="430"/> <!--Squirtle-->
-    <img src="https://i.imgur.com/54fvKOQ.png" width="430"/> <!--Charizard-->
-    <img src="https://i.imgur.com/xaHPMUd.png" width="430"/> <!--Eevee-->
-    <img src="https://i.imgur.com/W41EHr2.png" width="430"/> <!--Clefairy-->
-    <img src="https://i.imgur.com/QjqQ6QQ.png" width="430"/> <!--Magikarp-->
-    <img src="https://i.imgur.com/K7G2VW4.png" width="430"/> <!--Machop-->
-    <img src="https://i.imgur.com/3z1WtCu.png" width="430"/> <!--Slowpoke-->
-    <img src="https://i.imgur.com/u8cYbFp.png" width="430"/> <!--Muk-->
-    <img src="https://i.imgur.com/54Ehhnk.png" width="430"/> <!--Porygon-->
-    <img src="https://i.imgur.com/XEOwCXr.png" width="430"/> <!--Chansey-->
-    <img src="https://i.imgur.com/smvCxHG.png" width="430"/> <!--Growlithe-->
-    <img src="https://i.imgur.com/ZR5h5dZ.png" width="430"/> <!--Scyther-->
-    <img src="https://i.imgur.com/I4TakUm.png" width="430"/> <!--Omanyte-->
-    <img src="https://i.imgur.com/165hq6O.png" width="430"/> <!--Corsola-->
-    <img src="https://i.imgur.com/H0AhgW5.png" width="430"/> <!--Mewtew-->
-    <img src="https://i.imgur.com/jF2DMqO.png" width="430"/> <!--Azumarill-->
-    <img src="https://i.imgur.com/G0LpD66.png" width="430"/> <!--Snubbull-->
-    <img src="https://i.imgur.com/zirtgZq.png" width="430"/> <!--Wobbuffet-->
-    <img src="https://i.imgur.com/O49I1gE.png" width="430"/> <!--Tyranitar-->
-    <img src="https://i.imgur.com/SCe91Uv.png" width="430"/> <!--Lugia-->
-    <img src="https://i.imgur.com/5vllDok.png" width="430"/> <!--Kyogre-->
-    <img src="https://i.imgur.com/3YSj8MB.png" width="430"/> <!--Rayquaza-->
-    <img src="https://i.imgur.com/YW5pSkZ.png" width="430"/> <!--Deoxys-->
-    <!--<br><a href="https://imgur.com/a/0wfFm" target="_blank">More previews</a>-->
-</p>
+![025 - Pikachu](https://github.com/user-attachments/assets/69829029-5d73-4596-bd3c-09994e4bbec2)
+![107](https://github.com/user-attachments/assets/7b3b385e-ab08-47e7-bed5-e0dd5340e4ee)
+![088](https://github.com/user-attachments/assets/877417d1-d9eb-461f-85f2-ec7b1d0c11b1)
+![072](https://github.com/user-attachments/assets/11c123d2-57a7-472d-8392-3d2230af76d5)
+![rotom-heat](https://github.com/user-attachments/assets/630e5275-ea00-49be-b092-f9a1f99577d9)
+![sawsbuck-summer](https://github.com/user-attachments/assets/74ef3375-e132-4447-8e83-70b5fb0de325)
 
 # Features
 - 719 unique Pokemon
