@@ -1,4 +1,6 @@
-﻿# Pokemon-Terminal
+﻿# Pokemon-Terminal (Dark Edition)
+
+> This is a fork of [LazoCoder/Pokemon-Terminal](https://github.com/LazoCoder/Pokemon-Terminal) with all Pokemon images darkened. The base color of each Pokemon is detected and shifted to a dark variant while preserving the original hue, making it suitable for dark terminal themes. See `darken_pokemon.py` for the conversion script.
 
 [![Build Status](https://travis-ci.org/LazoCoder/Pokemon-Terminal.svg?branch=master)](https://travis-ci.org/LazoCoder/Pokemon-Terminal)
 
