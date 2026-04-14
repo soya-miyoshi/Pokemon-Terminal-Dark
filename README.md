@@ -1,6 +1,10 @@
 ﻿# Pokemon-Terminal (Dark Edition)
 
 > This is a fork of [LazoCoder/Pokemon-Terminal](https://github.com/LazoCoder/Pokemon-Terminal) with all Pokemon images darkened. The base color of each Pokemon is detected and shifted to a dark variant while preserving the original hue, making it suitable for dark terminal themes. See `darken_pokemon.py` for the conversion script.
+>
+> This fork also adds 24 extra images (trainers, alt forms, anniversary art, etc.) sourced from [pldh.net's Rarities & B-Sides gallery](https://pldh.net/gallery/rarities) — these are **not** included in the upstream repo. They're run through the same darkening pass as the rest, so `pokemon -e` stays consistent with the main set.
+>
+> I install this fork from my own [dotfiles](https://github.com/soya-miyoshi/dotfiles) — see the [venv + `~/.local/bin` symlink](#venv--locallocalbin-symlink) section below for the pattern.
 
 [![Build Status](https://travis-ci.org/LazoCoder/Pokemon-Terminal.svg?branch=master)](https://travis-ci.org/LazoCoder/Pokemon-Terminal)
 
@@ -36,37 +40,29 @@ Get a compatible terminal emulator:
 - [Windows Terminal](https://www.microsoft.com/p/windows-terminal-preview/9n0dx20hk701)
 - [Kitty](https://sw.kovidgoyal.net/kitty/) from version `0.27.0` onwards
 
-You can then proceed with one of the following methods for installation:
-- [Arch Linux User Repository package (System-wide)](https://aur.archlinux.org/packages/pokemon-terminal-git/) (maintained by [@sylveon](https://github.com/sylveon))
-- [pip (System-wide or Per-User)](#pip)
-- [npm (Per-User only)](#npm)
+The only reliable way to install this fork is directly from the repo — the upstream `pip` and `npm` packages don't ship the darkened sprites or the extras. Pick one of:
+- [venv + `~/.local/bin` symlink (recommended)](#venv--locallocalbin-symlink)
 - [Distutils (System-wide or Per-User)](#distutils)
 
-## pip
+## venv + `~/.local/bin` symlink
 
-Linux users: Your distro might include `pip` in a different package than Python, make sure to have that installed.
+This is how I install the fork from my own [dotfiles](https://github.com/soya-miyoshi/dotfiles) (see `run_once_after_03_install_pokemon_terminal.sh.tmpl`): clone the repo, install it into a local `python3 -m venv`, and symlink the generated `pokemon` entry point into `~/.local/bin` so it's on your `PATH` without polluting the system Python.
 
-Run `pip3 install git+https://github.com/LazoCoder/Pokemon-Terminal.git`.
+```bash
+git clone https://github.com/soya-miyoshi/Pokemon-Terminal-Dark.git
+cd Pokemon-Terminal-Dark
 
-If you want a system-wide install, run the command as superuser or administrator.
+python3 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -e .
+deactivate
 
-If you want a per-user install, append the `--user` flag.
+mkdir -p "$HOME/.local/bin"
+ln -sf "$PWD/.venv/bin/pokemon" "$HOME/.local/bin/pokemon"
+```
 
-You might want to add the following directories to your `PATH` on a per-user install, to be able to call `pokemon` and `ichooseyou` everywhere:
- - Linux and macOS: `~/.local/bin`
- - Windows: (replace `X` by your Python minor version, for example, 8 for Python 3.8)
-   - `%AppData%\Python\Python3X\Scripts` for a desktop installation of Python;
-   - `%LocalAppData%\Packages\PythonSoftwareFoundation.Python.3.X_qbz5n2kfra8p0\LocalCache\local-packages\Python3X\Scripts` for a Microsoft Store installation of Python (note that there's two `X` here).
-
-When the command completes, it's installed and ready to go!
-
-## npm
-
-Obviously requires to have [Node.js](https://nodejs.org/) installed.
-
-You can install in any (npm-supported) OS using `npm install --global pokemon-terminal`. That's it, you're done!
-
-Make sure you also have Python installed, `npm` won't automagically do that for you.
+Make sure `~/.local/bin` is on your `PATH`, then `pokemon` is ready to go.
 
 ## Distutils
 
